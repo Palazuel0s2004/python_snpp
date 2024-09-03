@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <input type="text" disabled value="{{result}}">
+    <form action="/calcular" method="post">
+        <input type="number" name="num1">
+        <input type="number" name="num2">
+        <select name="op">
+            <option value="+">Sumar</option>
+            <option value="-">Resta</option>
+            <option value="x">Multiplicación</option>
+            <option value="/">División</option>
+        </select>
+        <button type="submit">calcular</button>
+    </form>
+</body>
+</html>
